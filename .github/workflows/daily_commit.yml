@@ -29,13 +29,13 @@ jobs:
           echo "+------------------------------------------------------+" > SYSTEM_LOG
           echo "|               SYSTEM AUTOMATED LOG                   |" >> SYSTEM_LOG
           echo "+------------------------------------------------------+" >> SYSTEM_LOG
-          echo "|  DATE : $DATE           TIME : $TIME     |" >> SYSTEM_LOG
-          echo "|  USER : OFIK                 ROLE : LEAD_DEV         |" >> SYSTEM_LOG
-          echo "|  DAILY: $CURRENT / 20               TOTAL: #$SEQ             |" >> SYSTEM_LOG
+          echo "|  DATE : $DATE           TIME : $TIME         |" >> SYSTEM_LOG
+          echo "|  USER : OFIKUR                 ROLE : FRONTEND_DEV   |" >> SYSTEM_LOG
+          echo "|  DAILY: $CURRENT / 20               TOTAL: #$SEQ              |" >> SYSTEM_LOG
           echo "+------------------------------------------------------+" >> SYSTEM_LOG
           echo "|                                                      |" >> SYSTEM_LOG
           echo "|  > [SCAN]    Calculating history......... [DONE]     |" >> SYSTEM_LOG
-          echo "|  > [CALC]    Daily iteration............. [$CURRENT]      |" >> SYSTEM_LOG
+          echo "|  > [CALC]    Daily iteration............. [$CURRENT]       |" >> SYSTEM_LOG
           echo "|  > [SYNC]    Updating database........... [OK]       |" >> SYSTEM_LOG
           echo "|  > [SAVE]    System checkpoint........... [SAVED]    |" >> SYSTEM_LOG
           echo "|                                                      |" >> SYSTEM_LOG
