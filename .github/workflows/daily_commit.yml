@@ -18,19 +18,22 @@ jobs:
           fetch-depth: 0
 
       - name: Update System Log
+        env:
+          TZ: 'Asia/Jakarta'
         run: |
           DATE=$(date '+%Y-%m-%d')
           TIME=$(date '+%H:%M:%S')
           TOTAL=$(git rev-list --count HEAD)
           SEQ=$((TOTAL + 1))
-          DAILY=$(git log --since="midnight" --author="auto@system.log" --oneline | wc -l | xargs)
+          
+          DAILY=$(git log --since="midnight" --author="ofikurr@gmail.com" --oneline | wc -l | xargs)
           CURRENT=$((DAILY + 1))
 
           echo "+------------------------------------------------------+" > SYSTEM_LOG
           echo "|               SYSTEM AUTOMATED LOG                   |" >> SYSTEM_LOG
           echo "+------------------------------------------------------+" >> SYSTEM_LOG
           echo "|  DATE : $DATE           TIME : $TIME         |" >> SYSTEM_LOG
-          echo "|  USER : OFIKUR                 ROLE : FRONTEND_DEV   |" >> SYSTEM_LOG
+          echo "|  USER : OFIKUR               ROLE : FRONTEND_DEV     |" >> SYSTEM_LOG
           echo "|  DAILY: $CURRENT / 20               TOTAL: #$SEQ              |" >> SYSTEM_LOG
           echo "+------------------------------------------------------+" >> SYSTEM_LOG
           echo "|                                                      |" >> SYSTEM_LOG
@@ -43,8 +46,8 @@ jobs:
           echo "|  STATUS: ONLINE  |  ERRORS: 0  |  MEMORY: STABLE     |" >> SYSTEM_LOG
           echo "+------------------------------------------------------+" >> SYSTEM_LOG
 
-          git config --global user.name "Auto System"
-          git config --global user.email "auto@system.log"
+          git config --global user.name "ofikur"
+          git config --global user.email "ofikurr@gmail.com"
           git add SYSTEM_LOG
           git commit -m "[LOG $CURRENT/20] System Refresh: $(date '+%Y-%m-%d %H:%M')"
           git push
