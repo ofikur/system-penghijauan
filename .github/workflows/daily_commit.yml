@@ -34,7 +34,7 @@ jobs:
           echo "+------------------------------------------------------+" >> SYSTEM_LOG
           echo "|  DATE : $DATE           TIME : $TIME         |" >> SYSTEM_LOG
           echo "|  USER : OFIKUR               ROLE : FRONTEND_DEV     |" >> SYSTEM_LOG
-          echo "|  DAILY: $CURRENT / 20               TOTAL: #$SEQ              |" >> SYSTEM_LOG
+          echo "|  DAILY: $CURRENT / 20               TOTAL: #$SEQ             |" >> SYSTEM_LOG
           echo "+------------------------------------------------------+" >> SYSTEM_LOG
           echo "|                                                      |" >> SYSTEM_LOG
           echo "|  > [SCAN]    Calculating History......... [DONE]     |" >> SYSTEM_LOG
