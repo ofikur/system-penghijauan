@@ -37,10 +37,10 @@ jobs:
           echo "|  DAILY: $CURRENT / 20               TOTAL: #$SEQ              |" >> SYSTEM_LOG
           echo "+------------------------------------------------------+" >> SYSTEM_LOG
           echo "|                                                      |" >> SYSTEM_LOG
-          echo "|  > [SCAN]    Calculating history......... [DONE]     |" >> SYSTEM_LOG
-          echo "|  > [CALC]    Daily iteration............. [$CURRENT]       |" >> SYSTEM_LOG
-          echo "|  > [SYNC]    Updating database........... [OK]       |" >> SYSTEM_LOG
-          echo "|  > [SAVE]    System checkpoint........... [SAVED]    |" >> SYSTEM_LOG
+          echo "|  > [SCAN]    Calculating History......... [DONE]     |" >> SYSTEM_LOG
+          echo "|  > [CALC]    Daily Iteration............. [$CURRENT]       |" >> SYSTEM_LOG
+          echo "|  > [SYNC]    Updating Database........... [OK]       |" >> SYSTEM_LOG
+          echo "|  > [SAVE]    System Checkpoint........... [SAVED]    |" >> SYSTEM_LOG
           echo "|                                                      |" >> SYSTEM_LOG
           echo "+------------------------------------------------------+" >> SYSTEM_LOG
           echo "|  STATUS: ONLINE  |  ERRORS: 0  |  MEMORY: STABLE     |" >> SYSTEM_LOG
