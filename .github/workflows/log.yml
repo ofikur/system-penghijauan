@@ -60,7 +60,6 @@ jobs:
         run: |
           DATE=$(date '+%Y-%m-%d %H:%M:%S')
           
-          # Isi file status yang super simpel
           echo "CURRENT STATUS: ACTIVE" > STATUS.log
           echo "LAST CHECK: $DATE WIB" >> STATUS.log
           echo "SYSTEM: GREEN" >> STATUS.log
