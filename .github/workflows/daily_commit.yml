@@ -49,5 +49,5 @@ jobs:
           git config --global user.name "ofikur"
           git config --global user.email "ofikurr@gmail.com"
           git add SYSTEM_LOG
-          git commit -m "[LOG $CURRENT/20] System Refresh: $(date '+%Y-%m-%d %H:%M')"
+          git commit -m "[LOG AUTO] System Refresh: $(date '+%Y-%m-%d %H:%M')"
           git push
